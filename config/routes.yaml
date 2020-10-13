@@ -1,0 +1,11 @@
+
+easy_admin_bundle:
+    resource: '@EasyAdminBundle/Controller/EasyAdminController.php'
+    prefix: /admin
+    type: annotation
+    
+index:
+    path: /{wildcard}
+    controller: App\Controller\HomeController::index
+    requirements:
+        wildcard: .*
